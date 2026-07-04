@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+.venv/
+web_security_report.md
