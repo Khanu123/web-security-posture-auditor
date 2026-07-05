@@ -15,6 +15,10 @@ This project shows practical web security awareness: HTTPS, HSTS, CSP, clickjack
 - Assigns a simple security grade.
 - Generates a Markdown report.
 
+## Example Report
+
+See [docs/examples/example_web_security_report.md](docs/examples/example_web_security_report.md) for a rendered sample posture report.
+
 ## Quick Start
 
 ```bash
