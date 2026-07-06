@@ -23,6 +23,10 @@ This project shows practical web security awareness: HTTPS, HSTS, CSP, clickjack
 
 See [docs/examples/example_web_security_report.md](docs/examples/example_web_security_report.md) for a rendered sample posture report.
 
+## Active Roadmap
+
+See [Roadmap](ROADMAP.md) for planned improvements and maintenance direction.
+
 ## Quick Start
 
 ```bash
