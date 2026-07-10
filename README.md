@@ -1,9 +1,18 @@
-# Web Security Posture Auditor
+﻿# Web Security Posture Auditor
 
 ![Project Type](https://img.shields.io/badge/Project-Flagship-blue) ![Focus](https://img.shields.io/badge/Focus-AppSec-green) ![Difficulty](https://img.shields.io/badge/Difficulty-Intermediate-orange)
 
 ![Report preview](docs/screenshots/report-preview.png)
 
+## Employer Review
+
+| Area | Evidence |
+| --- | --- |
+| Target role | Application Security / Junior Security Analyst |
+| Strongest proof | HTTP security header checks, passive auditing, screenshot preview, tests |
+| Start here | [docs/screenshots/report-preview.png](docs/screenshots/report-preview.png) |
+| Deeper review | [docs/employer-review.md](docs/employer-review.md) |
+| Roadmap | [docs/roadmap.md](docs/roadmap.md) |
 Web Security Posture Auditor passively checks HTTPS usage and common security headers. It is designed for safe, authorized appsec review without crawling, fuzzing, or exploiting targets.
 
 ## Why Employers Like This
