@@ -24,6 +24,10 @@ This project shows practical web security awareness: HTTPS, HSTS, CSP, clickjack
 - Audits live URLs or saved header JSON.
 - Checks important security headers.
 - Flags weak Content Security Policy patterns.
+- Reviews HSTS lifetime, CSP `object-src`/`base-uri`, and CSP clickjacking alternatives.
+- Checks Secure, HttpOnly, and SameSite cookie attributes.
+- Flags dangerous CORS combinations.
+- Inspects the negotiated TLS version, cipher, and certificate expiry for live HTTPS targets.
 - Flags server version disclosure.
 - Assigns a simple security grade.
 - Generates a Markdown report.
@@ -43,6 +47,8 @@ set PYTHONPATH=src
 python -m web_security_posture_auditor.cli --headers-json sample_data/headers.json --url https://demo.local
 python -m unittest discover -s tests -v
 ```
+
+Saved-header mode is fully offline and reproducible. Live mode performs one normal HTTPS request plus a TLS handshake; it does not crawl, fuzz, authenticate, or exploit the target.
 
 ## Responsible Use
 

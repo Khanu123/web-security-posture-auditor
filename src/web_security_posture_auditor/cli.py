@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 
-from .core import audit, fetch_headers, grade, load_headers, write_report
+from .core import audit, fetch_headers, grade, inspect_tls, load_headers, write_report
 
 
 def main() -> int:
@@ -13,7 +13,8 @@ def main() -> int:
     args = parser.parse_args()
 
     headers = load_headers(args.headers_json) if args.headers_json else fetch_headers(args.url)
-    findings = audit(args.url, headers)
+    tls = None if args.headers_json else inspect_tls(args.url)
+    findings = audit(args.url, headers, tls)
     write_report(args.url, findings, args.out)
     print(f"Findings: {len(findings)}")
     print(f"Grade: {grade(findings)}")

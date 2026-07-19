@@ -1,5 +1,8 @@
 {
   "Server": "nginx/1.18.0",
   "Content-Type": "text/html; charset=utf-8",
-  "Content-Security-Policy": "default-src * 'unsafe-inline'"
+  "Content-Security-Policy": "default-src * 'unsafe-inline'",
+  "Set-Cookie": "session=synthetic-value; Path=/",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Credentials": "true"
 }
